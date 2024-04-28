@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<h3 class="card-title text-left mb-3">Login</h3>
+<form>
+    <div class="form-group">
+        <label>email</label>
+        <input type="text" class="form-control ">
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="text" class="form-control ">
+    </div>
+    <div class="form-group d-flex align-items-center justify-content-between">
+        <a asp-controller="Auth" asp-action="ForgetPassword" class="forgot-pass">Forgot password</a>
+    </div>
+    <div class="text-center">
+        <a asp-controller="Admin" asp-action="Index">
+            <button type="submit" class="btn btn-primary btn-block enter-btn">
+                Login
+            </button>
+        </a>
+       
+    </div>
+    <div class="d-flex">
+        <button class="btn btn-facebook mr-2 col">
+            <i class="mdi mdi-facebook">
+                <a asp-controller="Admin" asp-action="Index"></a>
+
+            </i> Facebook
+        </button>
+        <button class="btn btn-google col">
+            <i class="mdi mdi-google-plus">
+                <a asp-controller="Admin" asp-action="Index"></a>
+
+            </i> Google plus
+        </button>
+    </div>
+    <p class="sign-up">Don't have an Account?<a asp-controller="Auth" asp-action="Register"> Sign Up</a></p>
+    <a asp-controller="Admin" asp-action="Index">Go To DAshboard for test</a>
+
+</form>
