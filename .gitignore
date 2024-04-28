@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/task_one_v2/task_one_v2.csproj
+/task_one_v2.sln
